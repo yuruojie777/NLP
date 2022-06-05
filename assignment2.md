@@ -5,19 +5,28 @@
 2. train.csv, val.csv, test_without_labels.csv. Put these 3 file under /content. (You only need to upload the 3 files when step1 doesn't work, because step 1 will download dataset)
 3. youtube_parsed_dataset.csv. This file would be used in domain feature training
 
-## Test different combination
+## Test different combination (8 in total)
 We tested 11 different combinations
+### baseline tests
 1. baseline(modified from Lab9)
-2. FastText word embedding
-3. FastText + POS word embedding
-4. FastText + POST + Domain word embedding
-5. Dot product Attention
-6. Scaled Dot product Attention
-7. Bahdanau Attention
-8. 1 Layer Stack
-9. 2 Layer Stacks
-10. With CRF
-11. Without CRF
+
+### word embedding tests
+1. FastText word embedding
+2. FastText + POS word embedding
+3. FastText + POST + Domain word embedding
+
+### attention tests
+1. Dot product Attention
+2. Scaled Dot product Attention
+3. Bahdanau Attention
+
+### stack layer tests
+1 Layer Stack
+2 Layer Stacks
+
+### CRF tests
+1. With CRF
+2. Without CRF
 
 ## Run the whole code in the ipnb notebook
 Simply run the whole code, and the test part allow you to adjust different parameters
